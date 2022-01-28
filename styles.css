@@ -1,0 +1,291 @@
+body{
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,div,p,a,button,ul {
+    font-family: 'Prata',sans-serif;
+    color: rgba(255, 255, 255,1);
+    padding: 0;
+    margin: 0;
+}
+.bg-grey{
+    background-color: rgb(55, 55, 66);
+    z-index: 1;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a,p{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+}
+
+
+header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+}
+.site-name h5{
+    
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.menu{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+button{
+    background-color: rgb(253, 217, 98);
+    border-style: none;
+    padding: 1rem 2.5rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+} 
+
+.menu_button{
+    display: none;
+}
+
+.site-detail {
+    width : 65%;
+}
+.site-header h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+sub-quote p {
+    width: 85%;
+    font-size: 1.1rem;
+}
+
+.company-list {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sample-website {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+.sample-website .sample1,
+.sample-website .sample2 {
+    width: 50%;
+}
+.sample-website-name {
+    margin: 1rem 0;
+}
+.sample-website-name h2 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+.sample-website-desc p {
+    font-size: 1.1rem;
+}
+
+article {
+    padding: 3.5rem 0;
+    display: flex;
+    gap: 5rem;
+}
+.dev-details h2 {
+    font-size: 2rem;
+    word-spacing: 5px;
+    font-weight: 100;
+}
+.dev-details p {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+}
+
+.get-in-touch {
+    margin: 4rem 0;
+    width: 50%;
+}
+.get-in-touch .heading h1{
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.get-in-touch .sub-quote {
+    margin: 1rem 0;
+    width: 90%;
+}
+
+footer {
+    padding: 1rem 0;
+}
+.foot, .social-links-container {
+    display: flex;
+    justify-content: space-between;
+}
+.social-links-container .social-links {
+    margin: 0 0.5rem;
+}
+
+
+
+@media(max-width:467px){
+    .container{
+           width: 90%;
+    }
+    .menu {
+        position: fixed;
+        inset: 0 35%;
+        width: 100%;
+        background-color: rgb(55, 55, 66);
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 0;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .menu[data-visible="true"]{
+        transform: translateX(0%);
+        
+    }
+    
+    ul li a{
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+    .menu_button {
+        z-index: 9999;
+        display: block;
+        background-color: transparent;
+    }
+    div.git-btn{
+        display: none;
+    }
+    .site-detail, sub-quote p{
+        width: 100%;
+    }
+    .site-header h1 {
+        font-size: 2.4rem;
+    }
+    sub-quote p{
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    sub-quote {
+        font-size: 1.1rem;
+    }
+    .company-list{
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .company-logos {
+        margin: 0 0.5rem;
+    } 
+    .sample-website {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sample-website .sample1,
+    .sample-website .sample2 {
+        width: 100%;
+    }
+    article{
+        flex-direction: column;
+    }
+    .dev-details{
+        width: 100%;
+    }   
+    .foot{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .get-in-touch {
+        width: 100%;
+    }
+}
+
+@media (min-width:467px) and (max-width:768px){
+    .container{
+        width: 90%;
+    }
+    .menu {
+        position: fixed;
+        inset: 0 35%;
+        width: 100%;
+        background-color: rgb(55, 55, 66);
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 0;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 500ms ease-out;
+    }
+
+    .menu[data-visible="true"]{
+        transform: translateX(0%);
+        
+    }
+    
+    
+    ul li a{
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+    .menu_button {
+        z-index: 9999;
+        display: block;
+        background-color: transparent;
+    } 
+    .site-detail {
+        width: 100%;
+    }
+    .company-logos{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0.5rem;
+    }
+    .sample-website {
+        flex-direction: column;
+    }
+    .sample-website .sample1,
+    .sample-website .sample2 {
+        width: 100%;
+    }
+    .sample-website-desc p{
+        font-weight: 800;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    article {
+        display: block;
+    }
+    .dev-details{
+        width: 100%;
+    }
+    div.git-btn{
+        display: none;
+    }
+    .get-in-touch {
+        width: 80%;
+    }
+    
+}
